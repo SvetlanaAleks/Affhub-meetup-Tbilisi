@@ -1,0 +1,214 @@
+.header
+	background: url('../img/bg_header.png') no-repeat center top
+	padding-bottom: 50px
+	+r(1023)
+		padding-bottom: 30px
+	+r(767)
+		padding-bottom: 0
+	&__wrapper
+		display: flex
+		align-items: flex-start
+		padding-top: 17px
+		+r(900)
+			display: block
+			padding-top: 47px
+		+r(639)
+			padding-top: 30px
+
+	&__left
+		padding-top: 64px
+		max-width: 400px
+		width: 100%
+		flex-shrink: 0
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif
+		+r(1360)
+			max-width: 370px
+		+r(1249)
+			max-width: 330px
+			padding-top: 45px
+		+r(1023)
+			min-width: 290px
+			padding-top: 35px
+			max-width: 34%
+		+r(900)
+			max-width: 100%
+			padding-top: 0
+			min-width: auto
+			display: flex
+			align-items: flex-start
+			margin-bottom: 30px
+		+r(639)
+			display: block
+	&__right
+		flex-shrink: 0
+		+r(1585)
+			max-width: 1020px
+		+r(1360)
+			max-width: 960px
+		+r(1249)
+			max-width: 880px
+		+r(1023)
+			max-width: 90%
+			min-width: 700px
+		+r(900)
+			max-width: 100%
+			min-width: auto
+
+	&__title
+		font-weight: bold
+		font-size: 39px
+		line-height: 50px
+		margin-bottom: 10px
+		letter-spacing: -0.4px
+		+r(1360)
+			font-size: 36px
+		+r(1249)
+			font-size: 32px
+			line-height: 120%
+		+r(1023)
+			font-size: 28px
+		+r(767)
+			font-size: 26px
+			margin-bottom: 5px
+	&__desc
+		color: #251440
+		font-size: 18px
+		line-height: 28px
+		margin-bottom: 10px
+		max-width: 77%
+		+r(1360)
+			max-width: 100%
+		+r(1023)
+			font-size: 17px
+			line-height: 120%
+		+r(767)
+			font-size: 16px
+			margin-bottom: 5px
+	&__info
+		color: #251440
+		font-size: 18px
+		line-height: 28px
+		font-weight: bold
+		margin-bottom: 20px
+		+r(1023)
+			font-size: 17px
+			margin-bottom: 15px
+		+r(767)
+			margin-bottom: 10px
+	&__btn
+		max-width: 266px
+		&--mob
+			display: none
+		+r(639)
+			margin: auto
+			&--mob
+				display: block
+			&--desc
+				display: none
+		+r(480)
+			max-width: 100%
+	&__info-top
+		margin-bottom: 108px
+		+r(1585)
+			margin-bottom: 78px
+		+r(1360)
+			margin-bottom: 60px
+		+r(1023)
+			margin-bottom: 40px
+		+r(900)
+			margin-bottom: 0
+			margin-right: 30px 
+		+r(639)
+			margin-right: 0
+			margin-bottom: 20px
+			text-align: center
+	&__info-bottom
+		+r(639)
+			margin-bottom: 15px
+.details
+	&__top
+		display: flex
+		align-items: center
+		padding-bottom: 26px
+		margin-bottom: 20px
+		border-bottom: 2px solid #FF579E
+		+r(1023)
+			padding-bottom: 16px
+			margin-bottom: 10px
+		+r(639)
+			justify-content: center
+	&__date
+		flex-shrink: 0
+		margin-right: 40px
+		+r(1360)
+			margin-right: 30px
+			width: 160px
+		+r(1249)
+			width: 140px
+		+r(1023)
+			width: 120px
+			margin-right: 20px
+		+r(767)
+			width: 100px
+			margin-right: 15px
+	&__desc
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif
+		color: #251440
+	&__month
+		font-weight: bold
+		font-size: 40px
+		line-height: 120%
+		+r(1023)
+			font-size: 35px
+		+r(767)
+			font-size: 30px
+	&__time
+		font-size: 18px
+		line-height: 28px
+		+r(1023)
+			font-size: 17px
+		+r(767)
+			font-size: 14px
+	&__bottom
+		display: flex
+		align-items: flex-start
+		img
+			flex-shrink: 0
+			margin-right: 20px
+		+r(639)
+			align-items: center
+			img
+				width: 30px
+	&__place-text
+		font-size: 18px
+		line-height: 28px
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif
+		color: #251440
+		margin-bottom: 5px
+		+r(1023)
+			font-size: 16px
+			line-height: 25px
+		+r(767)
+			font-size: 15px
+			line-height: 19px
+	&__link
+		display: inline-flex
+		align-items: center
+		color: #FF579E
+		text-decoration: none
+		font-size: 15px
+		font-family: 'IBM Plex Sans', Arial, Helvetica, sans-serif
+		.fico
+			margin-left: 15px
+			display: flex
+			transition: all .3s
+		&:hover
+			.fico
+				margin-left: 20px
+		+r(767)
+			font-size: 14px
+			.fico
+				margin-left: 10px
+			&:hover
+				.fico
+					margin-left: 15px

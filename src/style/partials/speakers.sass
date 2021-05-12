@@ -1,0 +1,112 @@
+.speakers
+	padding: 50px 0
+	+r(1360)
+		padding: 40px 0
+	+r(639)
+		padding: 30px 0
+	&__wrapper
+		display: flex
+		margin-bottom: 50px
+		+r(1360)
+			margin-bottom: 40px
+		+r(767)
+			flex-wrap: wrap
+	&__btn
+		max-width: 337px
+		margin: auto
+		display: block
+		font-size: 20px
+		+r(767)
+			font-size: 18px
+		+r(480)
+			max-width: 100%
+
+
+.speaker
+	padding-top: 20px
+	padding-bottom: 63px
+	+nlt
+		padding-right: 30px
+		border-right: 1px solid #9483AB
+	&:not(:first-of-type)
+		padding-left: 30px
+	+r(1360)
+		padding-bottom: 50px
+	+r(1249)
+		padding-bottom: 30px
+	+r(1023)
+		padding-top: 10px
+		padding-bottom: 20px
+		+nlt
+			padding-right: 20px
+		&:not(:first-of-type)
+			padding-left: 20px
+	+r(900)
+		+nlt
+			padding-right: 10px
+		&:not(:first-of-type)
+			padding-left: 10px
+	+r(767)
+		width: calc(100%/2)
+		+nlt
+			border-right: none
+		&:nth-of-type(odd)
+			border-right: 1px solid #9483AB
+			padding-left: 0
+		&:nth-of-type(-n+2)
+			border-bottom: 1px solid #9483AB
+	&__photo-wrap
+		margin-left: -40px
+		+r(1249)
+			max-width: 200px
+			margin-left: -20px
+		+r(1023)
+			max-width: 180px
+		+r(900)
+			max-width: 150px
+	&__name
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif
+		font-weight: 500
+		font-size: 30px
+		line-height: 150%
+		display: inline-block
+		+r(1249)
+			font-size: 28px
+		+r(1023)
+			font-size: 24px
+			line-height: 130%
+		+r(639)
+			font-size: 22px
+	&__post
+		color: #9483AB
+		font-size: 16px
+		line-height: 170%
+		margin-bottom: 28px
+		+r(1249)
+			margin-bottom: 20px
+		+r(1023)
+			line-height: 150%
+			margin-bottom: 15px
+		+r(639)
+			font-size: 15px
+			line-height: 140%
+	&__title
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif
+		font-weight: 500
+		color: #251440
+		font-size: 20px
+		line-height: 170%
+		margin-bottom: 30px
+		+r(1249)
+			font-size: 19px
+			line-height: 150%
+			margin-bottom: 20px
+		+r(1023)
+			font-size: 17px
+	&__time
+		color: #FF579E
+		font-size: 16px
+		line-height: 170%
+		+r(1023)
+			font-size: 15px
+			line-height: 150%

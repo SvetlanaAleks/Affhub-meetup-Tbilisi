@@ -1,0 +1,119 @@
+.check-in
+	padding-top: 100px
+	padding-bottom: 50px
+	+r(900)
+		padding: 40px 0
+	+r(639)
+		padding: 30px 0
+	&__wrapper
+		background: #FFFFFF;
+		box-shadow: 0px 26px 38px rgba(0, 0, 0, 0.05)
+		border-radius: 5px
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		padding: 80px 100px
+		+r(1360)
+			padding: 60px 80px
+		+r(1249)
+			padding: 40px 60px
+		+r(1023)
+			padding: 30px 50px
+		+r(767)
+			display: block
+			padding: 30px
+		+r(480)
+			padding: 15px
+	&__left
+		max-width: 435px
+		width: 100%
+		+r(1249)
+			max-width: 385px
+		+r(1023)
+			max-width: 280px
+		+r(767)
+			max-width: 100%
+			text-align: center
+			margin-bottom: 30px
+	&__title
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif
+		font-weight: 500
+		font-size: 30px
+		line-height: 100%
+		color: #211540
+		margin-bottom: 30px
+		+r(1023)
+			font-size: 28px
+			margin-bottom: 20px
+		+r(767)
+			font-size: 26px
+			margin-bottom: 15px
+	&__text
+		color: #9483AB
+		font-style: italic
+		font-size: 16px
+		line-height: 190%
+		+r(1023)
+			line-height: 160%
+	&__right
+		max-width: 435px
+		width: 100%
+		+r(1249)
+			max-width: 385px
+		+r(1023)
+			max-width: 280px
+		+r(767)
+			max-width: 100%
+.form
+	max-width: 100%
+	&__input-wrap
+		position: relative
+		+nlt
+			margin-bottom: 40px
+		+r(1023)
+			+nlt
+				margin-bottom: 30px
+	&__input
+		width: 100%
+		padding: 8px ​10px 10px 
+		box-sizing: border-box
+		background: none
+		font-size: 16px
+		color: #211540
+		outline: none
+		border: none
+		height: 30px
+		border-radius: 0
+		border-bottom: 1px solid transparentize(#211540, .8)
+		transition: all .3s
+		&::placeholder
+			font-family: 'IBM Plex Sans', sans-serif
+			font-size: 16px
+			color: #211540
+		&:focus, &.active
+			border-bottom: 1px solid #FF579E
+			&~.form__label
+				font-size: 14px
+				color: #777
+				top: -15px
+				+r(480)
+					top: -8px
+		+r(480)
+			font-size: 15px
+	&__label
+		color: #211540
+		position: absolute
+		left: 0
+		top: 8px
+		transition: all .3s
+		font-size: 16px
+		pointer-events: none
+		+r(480)
+			font-size: 15px
+	&__btn
+		font-size: 20px
+		margin-top: 43px
+		+r(1023)
+			margin-top: 30px
+		+r(767)
+			font-size: 18px

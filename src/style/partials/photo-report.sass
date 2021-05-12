@@ -1,0 +1,349 @@
+.photo-report
+	padding-top: 180px
+	padding-bottom: 100px
+	position: relative
+	.container
+		background: url('../img/svg/report_bg.svg') no-repeat -57px calc(50% - -50px)
+	+r(1585)
+		padding-top: 140px
+		padding-bottom: 80px
+	+r(1360)
+		padding-top: 80px
+		padding-bottom: 40px
+	+r(1249)
+		.container
+			background-size: 110%
+			background-position: -37px calc(50% - -10px)
+	+r(900)
+		padding: 40px 0
+		.container
+			background: none
+	+r(639)
+		padding: 30px 0
+	&__wrap
+		position: absolute
+		top: 52%
+		left: 50%
+		transform: translate(-50%, -50%)
+		max-width: 570px
+		width: 100%
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif
+		+r(1585)
+			max-width: 470px
+		+r(1360)
+			max-width: 460px
+		+r(1249)
+			max-width: 350px
+		+r(1023)
+			max-width: 290px
+		+r(900)
+			max-width: 100%
+			position: static
+			transform: none
+			margin-bottom: 30px
+	&__title
+		font-weight: bold
+		font-size: 40px
+		line-height: 120%
+		margin-bottom: 37px
+		letter-spacing: -0.4px
+		+r(1360)
+			font-size: 38px
+			margin-bottom: 25px
+		+r(1249)
+			font-size: 32px
+			margin-bottom: 20px
+		+r(1023)
+			font-size: 28px
+			margin-bottom: 10px
+		+r(767)
+			font-size: 26px
+		+r(480)
+			font-size: 22px
+	&__info
+		display: flex
+		align-items: center
+		margin-bottom: 42px
+		position: relative
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			width: 113px
+			height: 51px
+			background: url('../img/svg/arrow.svg') no-repeat center
+			background-size: 100%
+			right: 160px
+			bottom: -80px
+		.fico
+			width: 32px
+			height: 32px
+			display: flex
+			align-items: center
+			justify-content: center
+			font-size: 14px
+			margin-right: 20px
+			color: #FF579E
+			border: 2px solid #FF579E
+			border-radius: 50%
+			flex-shrink: 0
+		span
+			color: #251440
+			font-weight: 500
+			font-size: 16px
+			line-height: 26px
+		+r(1585)
+			white-space: normal
+			&::before
+				right: 100px
+				bottom: -60px
+		+r(1360)
+			margin-bottom: 30px
+		+r(1249)
+			&::before
+				right: 0
+		+r(1023)
+			margin-bottom: 20px
+			&::before
+				display: none
+				background: none
+			span
+				font-size: 15px
+				line-height: 150%
+			.fico
+				margin-right: 10px
+
+	&__btn
+		opacity: 0.2
+		cursor: no-drop
+		max-width: 227px
+		font-size: 18px
+		padding: 14px
+		+r(1023)
+			padding: 12px
+		+r(480)
+			max-width: 100%
+	&__list
+		display: flex
+		justify-content: space-between
+		+r(900)
+			flex-wrap: wrap
+
+
+.photo-report__col
+	+r(900)
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+	+r(639)
+		display: block
+		max-width: calc(100%/2 - 10px)
+	+r(480)
+		max-width: calc(100%/2 - 5px)
+	&--1
+		padding-top: 170px
+		padding-bottom: 94px
+		+r(1360)
+			padding-top: 120px
+			padding-bottom: 85px
+		+r(1249)
+			padding-top: 80px
+			padding-bottom: 75px
+		+r(900)
+			padding-top: 0
+			padding-bottom: 0
+			margin-bottom: 30px
+		+r(639)
+			margin-bottom: 20px
+		.report-item
+			&:nth-of-type(1)
+				margin-bottom: 78px
+				margin-left: -101px
+				+r(1585)
+					margin-left: 0px
+				+r(1360)
+					margin-left: 60px
+				+r(1249)
+					margin-bottom: 50px
+				+r(1023)
+					margin-left: 10px
+			&:nth-of-type(2)
+				margin-bottom: 74px
+				margin-left: -200px
+				+r(1585)
+					margin-left: -70px
+				+r(1360)
+					margin-left: 0
+				+r(1249)
+					margin-bottom: 55px
+				+r(1023)
+					margin-left: -30px
+			&:nth-of-type(3)
+				margin-left: -101px
+				+r(1585)
+					margin-left: -10px
+				+r(1360)
+					margin-left: 40px
+				+r(1249)
+					margin-left: 20px
+				+r(1023)
+					margin-left: 0px
+			+r(900)
+				&:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3)
+					margin-left: 0
+					margin-bottom: 0
+			+r(639)
+				+nlt
+					margin-bottom: 20px
+	&--2
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		+r(900)
+			order: 1
+			width: 100%
+		+r(639)
+			display: flex
+			max-width: 100%
+		+r(480)
+			max-width: 100%
+		.report-item
+			&:nth-of-type(1)
+				margin-left: 50px
+				+r(1249)
+					margin-left: -30px
+				+r(1023)
+					margin-left: -20px
+			&:nth-of-type(2)
+				margin-left: 100px
+				+r(1249)
+					margin-left: -20px
+			+r(900)
+				&:nth-of-type(1), &:nth-of-type(2)
+					margin-left: 0
+					margin-bottom: 0
+			+r(639)
+				max-width: calc(100%/2 - 10px)
+			+r(480)
+				max-width: calc(100%/2 - 5px)
+	&--3
+		padding-top: 95px
+		+r(1360)
+			padding-top: 85px
+		+r(1249)
+			padding-top: 55px
+		+r(900)
+			padding-top: 0
+			margin-bottom: 30px
+		+r(639)
+			margin-bottom: 20px
+		.report-item
+			&:nth-of-type(1)
+				margin-bottom: 81px
+				+r(1360)
+					position: relative
+					left: -50px
+				+r(1249)
+					margin-bottom: 40px
+				+r(1023)
+					left: -20px
+			&:nth-of-type(2)
+				margin-bottom: 91px
+				position: relative
+				left: 199px
+				+r(1585)
+					left: 70px
+				+r(1360)
+					left: 20px
+				+r(1249)
+					margin-bottom: 50px
+					left: -10px
+				+r(1023)
+					left: 20px
+			&:nth-of-type(3)
+				position: relative
+				left: 100px
+				+r(1585)
+					left: 20px
+				+r(1249)
+					left: -30px
+				+r(1023)
+					left: -10px
+			+r(900)
+				&:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3)
+					margin-left: 0
+					position: static
+					margin-bottom: 0
+			+r(639)
+				+nlt
+					margin-bottom: 20px
+
+.report-item
+	+r(900)
+		max-width: calc(100%/3 - 20px)
+	+r(767)
+		max-width: calc(100%/3 - 10px)
+	+r(639)
+		max-width: 100%
+	&__photo
+		border-radius: 5px
+		overflow: hidden
+		margin-bottom: 20px
+		+r(1585)
+			max-width: 330px
+		+r(1360)
+			max-width: 300px
+		+r(1249)
+			max-width: 280px
+			margin-bottom: 10px
+		+r(1023)
+			max-width: 250px
+		+r(900)
+			max-width: 100%
+	&__title
+		color: #251440
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif
+		font-weight: bold
+		font-size: 32px
+		line-height: 120%
+		margin-bottom: 10px
+		+r(1249)
+			font-size: 27px
+			line-height: 1
+		+r(1023)
+			font-size: 22px
+		+r(900)
+			font-size: 20px
+			margin-bottom: 5px
+		+r(767)
+			font-size: 17px
+		+r(480)
+			font-size: 14px
+	&__link
+		display: inline-flex
+		align-items: center
+		color: #FF579E
+		text-decoration: none
+		font-size: 15px
+		font-family: 'IBM Plex Sans', Arial, Helvetica, sans-serif
+		.fico
+			margin-left: 15px
+			display: flex
+			transition: all .3s
+		&:hover
+			.fico
+				margin-left: 20px
+		+r(900)
+			font-size: 14px
+			.fico
+				margin-left: 10px
+			&:hover
+				.fico
+					margin-left: 15px
+		+r(480)
+			font-size: 12px
+			.fico
+				margin-left: 5px
+			&:hover
+				.fico
+					margin-left: 10px

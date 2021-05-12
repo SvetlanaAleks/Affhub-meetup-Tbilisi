@@ -1,0 +1,28 @@
+- var HEADER = LANG.header;
+- var MAIN = LANG.main;
+
+section.header
+	include menu
+	.container
+		.header__wrapper
+			.header__left
+				.header__info-top
+					h1.header__title.title-color!= HEADER.title
+					p.header__desc!= HEADER.desc
+					p.header__info Meetup + Afterparty
+					a.header__btn.header__btn--desc.btn.js-scroll(href="#check-in")!= MAIN.btn
+				.header__info-bottom.details
+					.details__top
+						img.details__date(src="img/date.svg", alt="04")
+						.details__desc
+							p.details__month!= HEADER.month
+							p.details__time!= HEADER.time
+					.details__bottom
+						img(src="img/tbilisi.png", alt="tbilisi")
+						.details__place
+							p.details__place-text!= HEADER.place
+							a.details__link(href="https://goo.gl/maps/aprQYc1EApKfbFcFA" target="_blank")!= HEADER.map
+								i.fico.fico-arrow
+				a.header__btn.header__btn--mob.btn.js-scroll(href="#check-in")!= MAIN.btn
+			.header__right
+				img(src="img/header_title.svg", alt="")

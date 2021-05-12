@@ -1,0 +1,17 @@
+- var EVENT_DESC = LANG.event_description;
+
+section.event-description
+	.container
+		h2.event-description__title.title-color!= EVENT_DESC.title_main
+		.event-description__wrapper
+			.event-description__row
+				h4.event-description__subtitle!= EVENT_DESC.title_1
+				.event-description__info
+					p.event-description__text!= EVENT_DESC.desc_1
+					p.event-description__text!= EVENT_DESC.desc_2
+			.event-description__row
+				h4.event-description__subtitle!= EVENT_DESC.title_2
+				.event-description__info
+					p.event-description__text!= EVENT_DESC.desc_3
+		a.event-description__link(href="https://calendar.google.com/calendar/u/0/r" target="_blank")!= EVENT_DESC.btn
+			i.fico.fico-arrowS

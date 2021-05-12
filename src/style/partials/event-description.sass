@@ -1,0 +1,85 @@
+.event-description
+	padding-top: 50px
+	padding-bottom: 50px
+	+r(1360)
+		padding: 40px 0
+	+r(639)
+		padding: 30px 0
+	&__title
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif
+		font-size: 32px
+		line-height: 100%
+		margin-bottom: 40px
+		font-weight: 600
+		display: inline-block
+		+r(1360)
+			font-size: 30px
+		+r(1023)
+			margin-bottom: 30px
+			font-size: 28px
+		+r(767)
+			margin-bottom: 20px
+			font-size: 26px
+	&__wrapper
+		margin-bottom: 33px
+		+r(639)
+			margin-bottom: 20px
+	&__row
+		display: flex
+		align-items: flex-start
+		color: #251440
+		+nlt
+			margin-bottom: 30px
+		+r(1360)
+			+nlt
+				margin-bottom: 20px
+		+r(639)
+			display: block
+	&__subtitle
+		font-weight: 600
+		font-size: 18px
+		line-height: 160%
+		max-width: 370px
+		width: 100%
+		margin-right: 10px
+		letter-spacing: 0.1px
+		+r(1360)
+			max-width: 300px
+		+r(1023)
+			max-width: 30%
+			flex-shrink: 0
+			font-size: 17px
+		+r(767)
+			font-size: 16px
+		+r(639)
+			max-width: 100%
+			margin-right: 0
+			margin-bottom: 12px
+	&__text
+		font-size: 18px
+		line-height: 163%
+		+nlt
+			margin-bottom: 30px
+		+r(1360)
+			+nlt
+				margin-bottom: 20px
+		+r(1023)
+			font-size: 17px
+			line-height: 150%
+		+r(767)
+			font-size: 16px
+	&__link
+		display: inline-flex
+		align-items: center
+		color: #FF579E
+		text-decoration: none
+		font-size: 16px
+		font-family: 'IBM Plex Sans', Arial, Helvetica, sans-serif
+		.fico
+			margin-left: 5px
+			transition: all .3s
+			display: flex
+			font-size: 13px
+		&:hover
+			.fico
+				margin-left: 10px

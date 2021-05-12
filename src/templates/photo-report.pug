@@ -1,0 +1,54 @@
+- var GALLERY = LANG.gallery;
+
+section.photo-report
+	.container
+		.photo-report__wrap
+			h2.photo-report__title.title-color!= GALLERY.title
+			p.photo-report__info
+				i.fico.fico-info
+				span!= GALLERY.desc
+			button.photo-report__btn.btn!= GALLERY.btn
+		.photo-report__list
+			.photo-report__col.photo-report__col--1
+				.report-item
+					img.report-item__photo(src="img/report-kharkiv.jpg", alt="report-kharkiv")
+					p.report-item__title!= GALLERY.city_1
+					a.report-item__link(href="")!= GALLERY.link
+						i.fico.fico-arrow
+				.report-item
+					img.report-item__photo(src="img/report-dnieper.jpg", alt="report-dnieper")
+					p.report-item__title!= GALLERY.city_2
+					a.report-item__link(href="")!= GALLERY.link
+						i.fico.fico-arrow
+				.report-item
+					img.report-item__photo(src="img/report-odessa.jpg", alt="report-odessa")
+					p.report-item__title!= GALLERY.city_3
+					a.report-item__link(href="")!= GALLERY.link
+						i.fico.fico-arrow
+			.photo-report__col.photo-report__col--2
+				.report-item
+					img.report-item__photo(src="img/report-kiev.jpg", alt="report-kiev")
+					p.report-item__title!= GALLERY.city_4
+					a.report-item__link(href="")!= GALLERY.link
+						i.fico.fico-arrow
+				.report-item
+					img.report-item__photo(src="img/report-lviv.jpg", alt="report-lviv")
+					p.report-item__title!= GALLERY.city_5
+					a.report-item__link(href="")!= GALLERY.link
+						i.fico.fico-arrow
+			.photo-report__col.photo-report__col--3
+				.report-item
+					img.report-item__photo(src="img/report-st-petersburg.jpg", alt="report-st-petersburg")
+					p.report-item__title!= GALLERY.city_6
+					a.report-item__link(href="")!= GALLERY.link
+						i.fico.fico-arrow
+				.report-item
+					img.report-item__photo(src="img/report-novgorod.jpg", alt="report-novgorod")
+					p.report-item__title!= GALLERY.city_7
+					a.report-item__link(href="")!= GALLERY.link
+						i.fico.fico-arrow
+				.report-item
+					img.report-item__photo(src="img/report-rostov-on-don.jpg", alt="report-rostov-on-don")
+					p.report-item__title!= GALLERY.city_8
+					a.report-item__link(href="")!= GALLERY.link
+						i.fico.fico-arrow

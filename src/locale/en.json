@@ -1,0 +1,109 @@
+{
+  "locale": "en",
+  "main": {
+    "everad": "При партнерстве и поддержке",
+    "btn": "Check-in"
+  },
+  "menu": {
+    "news": "News",
+    "interview": "Interview",
+    "konkursy": "Contests",
+    "events": "CPA events",
+    "arbitrazh": "Traffic arbitrage",
+    "novichkov": "For beginners",
+    "istochnikitrafika": "Sources of traffic",
+    "servisy": "Services",
+    "vertikali": "Verticals and niches",
+    "cases": "Cases",
+    "social": "Social networks",
+    "aboutstudy": "Training",
+    "events_2": "Events",
+    "kalendarcpa": "Events calendar",
+    "vakansii": "Vakansii",
+    "contest": "Lay on three cars"
+  },
+  "header": {
+    "title": "First in Georgia!",
+    "desc": "The top affiliate event",
+    "month": "June",
+    "time": "At 3pm on Friday",
+    "place": "Tbilisi, Republic Multifunctional Event&nbsp;Space",
+    "map": "On the map"
+  },
+  "event_description": {
+    "title_main": "The description of event:",
+    "title_1": "Why do you think you need to be on Affhub?",
+    "desc_1": "Affhub is the arbitration community which affiliates with affiliated marketing members throughout the world. Our objectives are maximizing the usefulness of the reports and networking on the hot afterparties. ",
+    "desc_2": "How would you like to get the actual tips and secrets of the top affiliated marketing? Would you like to make new acquaintance in this area? Are you looking for a team or profitable acquaintance?  Come to AFFHUB!",
+    "title_2": "Affhub Meetup Tbilisy",
+    "desc_3": "Is a prominent event for webmasters and top-affiliates of Georgia. This includes  reports from tops, advanced networking and pleasant afterparty with smoky hookahs and all-in  bar entertainment",
+    "btn": "Добавить в календарь напоминание"
+  },
+  "entertaining_program": {
+    "title": "Affhub Meetup Tbilisi - это:",
+    "text_1": "Meetup + Afterparty",
+    "text_2": "Four reports from affiliated marketing tops ",
+    "text_3": "Развлекательная<br> программа",
+    "text_4": "TOP niches: gambling, nutra, crypto, dating, bettin",
+    "text_5": "Advanced networking",
+    "text_6": "Smoky hookahs and all-in bar entertainment "
+  },
+  "speakers": {
+    "name": "Секретный Спикер",
+    "post": "Название компании и должность",
+    "title": "Тема доклада в несколько строчек если это необходимо",
+    "time": "Начало - конце"
+  },
+  "schedule": {
+    "title_main": "Dive into world of traffic together with Affhub Meetup",
+    "subtitle": "Timing",
+    "item_1": "Check-in for Affhub Meetup Tbilisi and  welcome drink",
+    "item_2": "Organizers and sponsors’ introductory remarks ",
+    "item_3": "Report 1",
+    "item_4": "Report 2",
+    "item_5": "Report 3",
+    "item_6": "Report 4",
+    "item_7": "Afterparty"
+  },
+  "team": {
+    "title": "Be in touch with our team for cooperation",
+    "name_1": "Sapogova Olga",
+    "name_2": "Maslova Viktorija",
+    "name_3": "Burjak Evgeny"
+  },
+  "gallery": {
+    "title": "Here is a spot/place for your mood and emotions!",
+    "desc": "Photo report will be here after the event. Keep for updates.",
+    "btn": "Pictures from events.",
+    "link": "Go to album",
+    "city_1": "Kharkov",
+    "city_2": "Dnipro",
+    "city_3": "Odessa",
+    "city_4": "Kiev",
+    "city_5": "Lviv",
+    "city_6": "St. Petersburg",
+    "city_7": "Novgorod",
+    "city_8": "Rostov-on-Don"
+  },
+  "sponsors": {
+    "title_1": "GTNTRAL SPONSOR",
+    "title_2": "Partners"
+  },
+  "check_in": {
+    "title": "Регистрация",
+    "desc": "Оставляй свои контакты, и мы будем держать тебя в курсе предстоящих событий, а также, будем поощрять приятными бонусами, как участника нашего сообщества.",
+    "label_1": "Имя",
+    "label_2": "Номер телефона",
+    "label_3": "@Telegram",
+    "label_4": "Твоя роль в аффилейт индустрии?",
+    "btn": "Отправить заявку"
+  },
+  "footer": {
+    "desc": "Все материалы на сайте https://affhub.net предназначены только для ознакомления. Мы делаем все возможное, чтобы вся публикуемая информация была как можно более точной и полной. <br><br> Администрация сайта Affhub.net не несет никакой ответственности за любые потери, в том числе и финансовые, при неправильном толковании поданных материалов или по причине использования неполной или неправильной информации, размещенной на этом сайте.",
+    "partners": "При партнерстве и поддержке",
+    "link_1": "О нас",
+    "link_2": "Конфиденциальность",
+    "link_3": "Пользовательское соглашение",
+    "copy": "Все права защищены."
+  }
+}
