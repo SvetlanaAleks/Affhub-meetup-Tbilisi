@@ -1,4 +1,3 @@
-import noScroll from "../global/noScroll";
 const Popup = (function () {
   "use strict";
   const popUpBlock = $(".js-popup");
@@ -13,7 +12,6 @@ const Popup = (function () {
         const target = $(_this.data("target"));
         target.toggleClass("active");
         overlay.addClass("active");
-        noScroll.on();
       });
     },
     closePopup: function () {
@@ -21,7 +19,6 @@ const Popup = (function () {
         e.preventDefault();
         popUpBlock.removeClass("active");
         overlay.removeClass("active");
-        noScroll.off();
       });
     },
     init: function () {
