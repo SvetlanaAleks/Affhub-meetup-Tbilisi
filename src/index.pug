@@ -156,6 +156,13 @@ html(lang=LANG.locale)
 				transition: .5s all ease;
 				transform: scale(1)
 			}
+		// Global site tag (gtag.js) - Google Analytics
+		script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-180331414-1')
+		script.
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-180331414-1');
 	body
 		#preloader
 			.preloader

@@ -1,7 +1,7 @@
 {
-  "locale": "en",
+  "locale": "english",
   "main": {
-    "everad": "При партнерстве и поддержке",
+    "everad": "With partnership and support",
     "btn": "Check-in"
   },
   "menu": {
@@ -37,22 +37,22 @@
     "desc_2": "How would you like to get the actual tips and secrets of the top affiliated marketing? Would you like to make new acquaintance in this area? Are you looking for a team or profitable acquaintance?  Come to AFFHUB!",
     "title_2": "Affhub Meetup Tbilisy",
     "desc_3": "Is a prominent event for webmasters and top-affiliates of Georgia. This includes  reports from tops, advanced networking and pleasant afterparty with smoky hookahs and all-in  bar entertainment",
-    "btn": "Добавить в календарь напоминание"
+    "btn": "Add a reminder to your calendar"
   },
   "entertaining_program": {
-    "title": "Affhub Meetup Tbilisi - это:",
+    "title": "Affhub Meetup Tbilisi is:",
     "text_1": "Meetup + Afterparty",
     "text_2": "Four reports from affiliated marketing tops ",
-    "text_3": "Развлекательная<br> программа",
+    "text_3": "Entertainment",
     "text_4": "TOP niches: gambling, nutra, crypto, dating, bettin",
     "text_5": "Advanced networking",
     "text_6": "Smoky hookahs and all-in bar entertainment "
   },
   "speakers": {
-    "name": "Секретный Спикер",
-    "post": "Название компании и должность",
-    "title": "Тема доклада в несколько строчек если это необходимо",
-    "time": "Начало - конце"
+    "name": "Secret Speaker",
+    "post": "Company name and position",
+    "title": "Topic",
+    "time": "beginning, end"
   },
   "schedule": {
     "title_main": "Dive into world of traffic together with Affhub Meetup",
@@ -90,20 +90,20 @@
     "title_2": "Partners"
   },
   "check_in": {
-    "title": "Регистрация",
-    "desc": "Оставляй свои контакты, и мы будем держать тебя в курсе предстоящих событий, а также, будем поощрять приятными бонусами, как участника нашего сообщества.",
-    "label_1": "Имя",
-    "label_2": "Номер телефона",
+    "title": "Check in",
+    "desc": "Leave your contacts, and we will keep you informed about upcoming events, and also, we will encourage you with pleasant bonuses as a member of our community.",
+    "label_1": "Name",
+    "label_2": "Phone number",
     "label_3": "@Telegram",
-    "label_4": "Твоя роль в аффилейт индустрии?",
-    "btn": "Отправить заявку"
+    "label_4": "What is your possition in the affiliate industry?",
+    "btn": "Send a request"
   },
   "footer": {
-    "desc": "Все материалы на сайте https://affhub.net предназначены только для ознакомления. Мы делаем все возможное, чтобы вся публикуемая информация была как можно более точной и полной. <br><br> Администрация сайта Affhub.net не несет никакой ответственности за любые потери, в том числе и финансовые, при неправильном толковании поданных материалов или по причине использования неполной или неправильной информации, размещенной на этом сайте.",
-    "partners": "При партнерстве и поддержке",
-    "link_1": "О нас",
-    "link_2": "Конфиденциальность",
-    "link_3": "Пользовательское соглашение",
-    "copy": "Все права защищены."
+    "desc": "All materials on the site https://affhub.net are for informational purposes only. We do our best to ensure that all published information is as accurate and complete as possible. <br><br> The administration of the Affhub.net site does not bear any responsibility for any losses, including financial ones, if the submitted materials are misinterpreted or because of the use of incomplete or incorrect information posted on this site.",
+    "partners": "With partnership and support",
+    "link_1": "About us",
+    "link_2": "Confidentiality",
+    "link_3": "Terms of use",
+    "copy": "All rights reserved."
   }
 }

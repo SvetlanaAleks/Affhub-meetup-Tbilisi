@@ -4059,10 +4059,9 @@ gulp-postcss@^8.0.0:
     postcss-load-config "^2.0.0"
     vinyl-sourcemaps-apply "^0.2.1"
 
-gulp-pug-i18n@^1.0.2:
+"gulp-pug-i18n@https://github.com/rubizhenko/gulp-pug-i18n.git":
   version "1.0.2"
-  resolved "https://registry.yarnpkg.com/gulp-pug-i18n/-/gulp-pug-i18n-1.0.2.tgz#a140199095e5214529ad149b0bb470a00f4140fd"
-  integrity sha512-R6AHCPwzJPmtS5tN39cZJEolSGxWFF1snJK1PtevjslAuT5i+7dEoliijrmjaUmNqgR9jvf+ClSdmWHY9mYgGA==
+  resolved "https://github.com/rubizhenko/gulp-pug-i18n.git#71750fa502fa02022468678156fefa6c66472656"
   dependencies:
     debug "^4.1.1"
     js-yaml "^3.13.1"
