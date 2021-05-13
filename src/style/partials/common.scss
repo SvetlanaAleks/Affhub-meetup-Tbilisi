@@ -106,7 +106,7 @@ svg {
   overflow: hidden;
 }
 
-.container {
+.wrapper {
   width: 1170px;
   margin: 0 auto;
   position: relative;
@@ -114,31 +114,31 @@ svg {
 }
 
 @media screen and (max-width: 1249px) {
-  .container {
+  .wrapper {
     width: 1000px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  .container {
+  .wrapper {
     width: 100%;
     padding: 0 40px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .container {
+  .wrapper {
     padding: 0 35px;
   }
 }
 
 @media screen and (max-width: 639px) {
-  .container {
+  .wrapper {
     padding: 0 15px;
   }
 }
 
-.btn {
+.btn-main {
   outline: none;
   text-decoration: none;
   border: none;
@@ -157,7 +157,7 @@ svg {
   transition: all 0.3s;
   display: block;
 }
-.btn:hover {
+.btn-main:hover {
   box-shadow: 3px 5px 20px #ff57c6;
 }
 .title-color {
@@ -171,4 +171,23 @@ svg {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #251440;
+}
+//overlay
+.overlay {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background: transparentize(#000, 0.15);
+  transition: all 0.5s;
+  pointer-events: none;
+  &.active {
+    opacity: 1;
+    pointer-events: visible;
+  }
 }

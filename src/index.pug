@@ -4,6 +4,7 @@ html(lang=LANG.locale)
 		meta(charset="UTF-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css")
 		link(rel="stylesheet", href="css/main.css")
 		title Affhub-meetup-Tbilisi
 		style.
@@ -179,5 +180,10 @@ html(lang=LANG.locale)
 		include templates/sponsors
 		include templates/check-in
 		include templates/footer
+		include templates/popup
+		+popup("index")
+		.overlay.js-overlay
+
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+		script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js") 
 		script(src="js/main.js")

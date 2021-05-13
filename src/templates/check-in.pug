@@ -1,7 +1,7 @@
 - var CHECK_IN = LANG.check_in;
 
 section.check-in#check-in
-	.container
+	.wrapper
 		.check-in__wrapper
 			.check-in__left
 				h2.check-in__title!= CHECK_IN.title
@@ -9,15 +9,15 @@ section.check-in#check-in
 			.check-in__right
 				form.form(action="/", method="post")
 					.form__input-wrap
-						input.form__input.js-input.form-control(type="text", name="name" required)
+						input.form__input.js-input(type="text", name="name" required)
 						label.form__label.js-label!= CHECK_IN.label_1
 					.form__input-wrap
-						input.form__input.js-input.form-control(type="tel", name="phone" required)
+						input.form__input.js-input(type="tel", name="phone" required)
 						label.form__label.js-label!= CHECK_IN.label_2
 					.form__input-wrap
-						input.form__input.js-input.form-control(type="text", name="telegram" required)
+						input.form__input.js-input(type="text", name="telegram" required)
 						label.form__label.js-label!= CHECK_IN.label_3
 					.form__input-wrap
-						input.form__input.js-input.form-control(type="text", name="comment" required)
+						input.form__input.js-input(type="text", name="comment" required)
 						label.form__label.js-label!= CHECK_IN.label_4
-					button.form__btn.btn!= CHECK_IN.btn
+					button.form__btn.btn-main!= CHECK_IN.btn

@@ -1,0 +1,119 @@
+.popup
+	overflow-x: hidden
+	overflow-y: auto
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	position: fixed
+	z-index: 120
+	display: none
+	&.active
+		display: flex
+	&__close
+		position: absolute
+		top: 47px
+		right: 30px
+		width: 24px
+		cursor: pointer
+		z-index: 1
+		+r(890)
+			right: 20px
+			top: 40px
+		+r(480)
+			top: 20px
+	&__wrap
+		position: relative
+		width: 1046px
+		max-width: 90vw
+		margin: auto
+		padding: 20px 0
+		+r(1023)
+			width: 600px
+		+r(639)
+			max-width: 90%
+			width: 480px
+		+r(480)
+			max-width: 100%
+			padding: 0
+	&__content
+		background: #FFFDFA
+		padding: 100px
+		box-shadow: 0px 26px 38px rgba(0, 0, 0, 0.05)
+		border-radius: 5px
+		position: relative
+		overflow: hidden
+		display: flex
+		align-items: center
+		justify-content: center
+		+r(1023)
+			padding: 70px
+			text-align: center
+			display: block
+		+r(639)
+			padding: 30px
+	&__left
+		max-width: 373px
+		width: 100%
+		margin-right: 100px
+		+r(1023)
+			max-width: 100%
+			margin-right: 0
+			margin-bottom: 30px
+	&__right
+		max-width: 373px
+		width: 100%
+		+r(1023)
+			margin: auto
+	&__title
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif
+		font-weight: 500
+		font-size: 30px
+		line-height: 130%
+		color: #211540
+		margin-bottom: 30px
+		+r(639)
+			font-size: 26px
+			margin-bottom: 20px
+		+r(479)
+			font-size: 20px
+			margin-bottom: 13px
+	&__text
+		color: #9483AB
+		font-size: 16px
+		line-height: 190%
+		font-style: italic
+		+r(479)
+			font-size: 15px
+			line-height: 150%
+	&__dropdown
+		width: 100%
+		border: 1px solid rgba(33, 21, 64, 0.2) !important
+
+.btn
+	display: flex
+	align-items: center
+	justify-content: space-between
+	width: 100%
+.dropdown-menu
+	overflow: hidden
+	padding: 0
+	width: 100%
+	border-radius: 5px
+	border: none
+	background: #EEEEEE
+	box-shadow: 0px 26px 38px rgba(0, 0, 0, 0.05)
+
+.dropdown-menu li
+	transition: all .3s
+	padding: 0 10px
+	a
+		line-height: 40px
+		height: 40px
+		color: #000000
+		transition: all .3s
+
+	&:hover
+		background: #FD579D
+		a
+			color: white

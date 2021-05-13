@@ -76,7 +76,7 @@
 .navigation-container > li.menu-item:hover > .sub-menu > li > a {
   color: white;
 }
-.header-menu .container {
+.header-menu .wrapper {
   height: 160px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -389,7 +389,7 @@ ul {
   .header-menu .navigation {
     padding-left: 20px;
   }
-  .header-menu .container {
+  .header-menu .wrapper {
     height: 150px;
   }
   .header-menu .navigation li {
@@ -402,7 +402,7 @@ ul {
     bottom: 30px;
   }
 
-  .header-menu .container {
+  .header-menu .wrapper {
     height: 100px;
     padding-bottom: 0;
   }
@@ -543,7 +543,7 @@ ul {
     background-position: top center;
   }
 
-  .header-menu .container {
+  .header-menu .wrapper {
     height: 80px;
   }
 
@@ -551,7 +551,7 @@ ul {
     display: none;
   }
 
-  .header-menu .container .mobile-button {
+  .header-menu .wrapper .mobile-button {
     background: url(../img/navigation.png) no-repeat 0 0;
     width: 35px;
     height: 15px;
@@ -631,11 +631,11 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
-  .header-menu .container {
+  .header-menu .wrapper {
     height: 61px;
   }
 
-  .header-menu .container .mobile-button {
+  .header-menu .wrapper .mobile-button {
     margin-top: 25px;
   }
 

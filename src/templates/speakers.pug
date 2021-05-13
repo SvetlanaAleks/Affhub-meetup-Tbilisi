@@ -2,34 +2,30 @@
 - var MAIN = LANG.main;
 
 .speakers
-	.container
+	.wrapper
 		.speakers__wrapper
 			.speaker
 				.speaker__photo-wrap
-					img(src="img/speaker.png", alt="speaker")
-				p.speaker__name.title-color!= SPEAKERS.name
-				p.speaker__post!= SPEAKERS.post
-				p.speaker__title!= SPEAKERS.title
-				p.speaker__time!= SPEAKERS.time
+					img(src="img/speaker_1.png", alt="speaker")
+				p.speaker__name.title-color!= SPEAKERS.name_1
+				p.speaker__post!= SPEAKERS.post_1
+				p.speaker__title!= SPEAKERS.title_1
 			.speaker
+				.speaker__photo-wrap
+					img(src="img/speaker_2.png", alt="speaker")
+				p.speaker__name.title-color!= SPEAKERS.name_2
+				p.speaker__post!= SPEAKERS.post_2
+				p.speaker__title!= SPEAKERS.title_2
+			.speaker
+				.speaker__photo-wrap
+					img(src="img/speaker_3.png", alt="speaker")
+				p.speaker__name.title-color!= SPEAKERS.name_3
+				p.speaker__post!= SPEAKERS.post_3
+				p.speaker__title!= SPEAKERS.title_3
+			.speaker.speaker--secret
 				.speaker__photo-wrap
 					img(src="img/speaker.png", alt="speaker")
 				p.speaker__name.title-color!= SPEAKERS.name
 				p.speaker__post!= SPEAKERS.post
 				p.speaker__title!= SPEAKERS.title
-				p.speaker__time!= SPEAKERS.time
-			.speaker
-				.speaker__photo-wrap
-					img(src="img/speaker.png", alt="speaker")
-				p.speaker__name.title-color!= SPEAKERS.name
-				p.speaker__post!= SPEAKERS.post
-				p.speaker__title!= SPEAKERS.title
-				p.speaker__time!= SPEAKERS.time
-			.speaker
-				.speaker__photo-wrap
-					img(src="img/speaker.png", alt="speaker")
-				p.speaker__name.title-color!= SPEAKERS.name
-				p.speaker__post!= SPEAKERS.post
-				p.speaker__title!= SPEAKERS.title
-				p.speaker__time!= SPEAKERS.time
-		a.speakers__btn.btn.js-scroll(href="#check-in")!= MAIN.btn
+		a.speakers__btn.btn-main.js-scroll(href="#check-in")!= MAIN.btn
