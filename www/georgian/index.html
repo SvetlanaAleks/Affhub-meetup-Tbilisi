@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/css/main.css"/>
     <title>Affhub-meetup-Tbilisi</title>
+    <script>var EVERlocale = "georgian";</script>
     <style>
       #preloader {
       	background: #161032;
@@ -509,29 +510,37 @@
     <section class="check-in" id="check-in">
       <div class="wrapper">
         <div class="check-in__wrapper">
-          <div class="check-in__left">
+          <div class="check-in__success">
+            <h2 class="check-in__subtitle">უახლოეს მომავალში ჩვენი მენეჯერი დაგიკავშირდებათ და მოგახსენებთ ღონისძიების დეტალებს. ყველა მოვლენისა და სიახლეების შესახებ ინფორმაციის მისაღებად გამოიწერეთ ჩვენი დეპეშა არხი!</h2>
+          </div>
+          <div class="check-in__left hide">
             <h2 class="check-in__title">რეგისტრაცია</h2>
             <p class="check-in__text">დატოვეთ თქვენი კონტაქტები, და ჩვენ გავაგრძელებთ თქვენს ინფორმირებას მომავალში დაგეგმილ ღონისძიებებზე, წაგახალისებთ სასიამოვნო ბონუსებით, როგორც ჩვენი საზოგადოების წევრს.</p>
           </div>
-          <div class="check-in__right">
-            <form class="form" action="/" method="post">
+          <div class="check-in__right hide">
+            <form class="form" id="registration_form" action="/" method="post">
+              <input class="js-input-location" type="hidden" name="location"/>
               <div class="form__input-wrap">
                 <input class="form__input js-input" type="text" name="name" required="required"/>
                 <label class="form__label js-label">სახელი</label>
+                <div class="form_error"></div>
               </div>
               <div class="form__input-wrap">
                 <input class="form__input js-input" type="tel" name="phone" required="required"/>
                 <label class="form__label js-label">ტელეფონის ნომერი</label>
+                <div class="form_error"></div>
               </div>
               <div class="form__input-wrap">
                 <input class="form__input js-input" type="text" name="telegram" required="required"/>
                 <label class="form__label js-label">@Telegram</label>
+                <div class="form_error"></div>
               </div>
               <div class="form__input-wrap">
-                <input class="form__input js-input" type="text" name="comment" required="required"/>
+                <input class="form__input js-input" type="text" name="comment"/>
                 <label class="form__label js-label">თქვენი როლი აფილეიტ - ინდუსტრიაში?</label>
+                <div class="form_error"></div>
               </div>
-              <button class="form__btn btn-main">მოთხოვნის გაგზავნა</button>
+              <button class="form__btn btn-main js-reg-event" id="reg_btn" type="submit">მოთხოვნის გაგზავნა</button>
             </form>
           </div>
         </div>
