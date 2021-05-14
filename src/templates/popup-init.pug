@@ -13,11 +13,11 @@ mixin popup-init(page)
 						button#dropdownMenuButton1.btn.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false') Select language
 						ul.dropdown-menu(aria-labelledby='dropdownMenuButton1')
 							li
-								a.js-change-lang(href=`/ru/`, data-lang="/ru/")
+								a.js-change-lang(href=`/${page}.html`, data-lang="/index.html")
 									img(src="img/svg/russia.svg", alt="russia")
 									| Russian
 							li
-								a.js-change-lang(href=`/${page}.html`, data-lang=`/index.html`)
+								a.js-change-lang(href=`/english/`, data-lang=`/english/`)
 									img(src="img/svg/english.svg", alt="english")
 									| English
 							li
