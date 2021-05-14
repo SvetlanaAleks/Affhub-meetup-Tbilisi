@@ -112,6 +112,11 @@
     "link_1": "About us",
     "link_2": "Confidentiality",
     "link_3": "Terms of use",
-    "copy": "All rights reserved."
+    "copy": "All rights reserved.",
+    "change_lang": "Change the website language"
+  },
+  "popup": {
+    "title": "Select the language to be displayed on the site",
+    "desc": ""
   }
 }

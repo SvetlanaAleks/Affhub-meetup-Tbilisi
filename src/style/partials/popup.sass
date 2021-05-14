@@ -93,8 +93,19 @@
 .btn
 	display: flex
 	align-items: center
-	justify-content: space-between
 	width: 100%
+	img
+		width: 24px
+		margin-right: 20px
+	&::after
+		border: none
+		position: absolute
+		right: 20px
+		margin-left: 0
+		background: url('../img/svg/arrow-dropdown.svg') no-repeat center
+		width: 10px
+		height: 7px
+		
 .dropdown-menu
 	overflow: hidden
 	padding: 0
@@ -113,7 +124,12 @@
 		color: #000000
 		transition: all .3s
 		display: block
-
+		display: flex
+		align-items: center
+	img
+		margin-right: 20px
+		width: 28px
+		flex-shrink: 0
 	&:hover
 		background: #FD579D
 		a
