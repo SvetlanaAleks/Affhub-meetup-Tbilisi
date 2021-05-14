@@ -116,7 +116,6 @@
     "change_lang": "Change the website language"
   },
   "popup": {
-    "title": "Select the language to be displayed on the site",
-    "desc": ""
+    "title": "Select the language to be displayed on the site"
   }
 }

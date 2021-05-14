@@ -71,21 +71,14 @@
 		font-size: 30px
 		line-height: 130%
 		color: #211540
-		margin-bottom: 30px
+		+r(1023)
+			margin-bottom: 30px
 		+r(639)
 			font-size: 26px
 			margin-bottom: 20px
 		+r(479)
 			font-size: 20px
 			margin-bottom: 13px
-	&__text
-		color: #9483AB
-		font-size: 16px
-		line-height: 190%
-		font-style: italic
-		+r(479)
-			font-size: 15px
-			line-height: 150%
 	&__dropdown
 		width: 100%
 		border: 1px solid rgba(33, 21, 64, 0.2) !important
@@ -105,7 +98,7 @@
 		background: url('../img/svg/arrow-dropdown.svg') no-repeat center
 		width: 10px
 		height: 7px
-		
+
 .dropdown-menu
 	overflow: hidden
 	padding: 0
