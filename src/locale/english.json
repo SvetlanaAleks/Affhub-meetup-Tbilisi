@@ -44,7 +44,7 @@
     "text_1": "Meetup + Afterparty",
     "text_2": "Four reports from affiliated marketing tops ",
     "text_3": "Entertainment",
-    "text_4": "TOP niches: gambling, nutra, crypto, dating, bettin",
+    "text_4": "TOP niches: gambling, nutra, crypto, dating, betting",
     "text_5": "Advanced networking",
     "text_6": "Smoky hookahs and all-in bar entertainment "
   },
@@ -119,6 +119,7 @@
     "title": "Select the language to be displayed on the site",
     "russia": "Russian",
     "english": "English",
-    "georgia": "Georgian"
+    "georgia": "Georgian",
+    "btn": "Select language"
   }
 }
