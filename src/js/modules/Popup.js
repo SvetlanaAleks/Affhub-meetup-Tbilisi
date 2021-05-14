@@ -1,8 +1,8 @@
 const Popup = (function () {
   "use strict";
   const popUpBlock = $(".js-popup");
-  const linkShowPopUp = $(".js-show-popup");
   const overlay = $(".js-overlay");
+  const linkShowPopUp = $(".js-show-popup");
 
   return {
     initPopup: function () {
