@@ -17,6 +17,16 @@ $(function () {
 
   document.body.onload = function () {
     setTimeout(function () {
+      var pop = document.getElementById("popup");
+
+      if (!pop.classList.contains("active")) {
+        pop.classList.add("active");
+      }
+    }, 200);
+  };
+
+  document.body.onload = function () {
+    setTimeout(function () {
       var preloader = document.getElementById("preloader");
 
       if (!preloader.classList.contains("cansel")) {
