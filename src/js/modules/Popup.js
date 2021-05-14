@@ -15,7 +15,7 @@ const Popup = (function () {
       });
     },
     closePopup: function () {
-      $(".js-close, .js-btn-popup-success").click(function (e) {
+      $(".js-close").click(function (e) {
         e.preventDefault();
         popUpBlock.removeClass("active");
         overlay.removeClass("active");

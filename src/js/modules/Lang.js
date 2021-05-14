@@ -1,12 +1,13 @@
 const Lang = (function () {
   "use strict";
   const linkChangeLang = $(".js-change-lang");
-  const popUpBlock = $(".js-popup");
+  const popUpBlockInit = $(".js-popup-init");
   const overlay = $(".js-overlay");
+
   return {
     initLang: function () {
       if (localStorage.getItem("initPopup") !== null) {
-        popUpBlock.removeClass("active");
+        popUpBlockInit.removeClass("active");
         overlay.removeClass("active");
       }
       if (
@@ -26,7 +27,7 @@ const Lang = (function () {
         localStorage.setItem("local", location.origin + lang);
 
         if (localStorage.getItem("initPopup") === null) {
-          popUpBlock.removeClass("active");
+          popUpBlockInit.removeClass("active");
           overlay.removeClass("active");
           localStorage.setItem("initPopup", false);
         }

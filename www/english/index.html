@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/css/main.css"/>
     <title>Affhub-meetup-Tbilisi</title>
+    <script>var EVERlocale = "english";</script>
     <style>
       #preloader {
       	background: #161032;
@@ -509,29 +510,37 @@
     <section class="check-in" id="check-in">
       <div class="wrapper">
         <div class="check-in__wrapper">
-          <div class="check-in__left">
+          <div class="check-in__success">
+            <h2 class="check-in__subtitle">Our manager will contact you shortly and tell you the details of the event. To keep abreast of all events and news, subscribe to our telegram channel!</h2>
+          </div>
+          <div class="check-in__left hide">
             <h2 class="check-in__title">Check in</h2>
             <p class="check-in__text">Leave your contacts, and we will keep you informed about upcoming events, and also, we will encourage you with pleasant bonuses as a member of our community.</p>
           </div>
-          <div class="check-in__right">
-            <form class="form" action="/" method="post">
+          <div class="check-in__right hide">
+            <form class="form" id="registration_form" action="/" method="post">
+              <input class="js-input-location" type="hidden" name="location"/>
               <div class="form__input-wrap">
                 <input class="form__input js-input" type="text" name="name" required="required"/>
                 <label class="form__label js-label">Name</label>
+                <div class="form_error"></div>
               </div>
               <div class="form__input-wrap">
                 <input class="form__input js-input" type="tel" name="phone" required="required"/>
                 <label class="form__label js-label">Phone number</label>
+                <div class="form_error"></div>
               </div>
               <div class="form__input-wrap">
                 <input class="form__input js-input" type="text" name="telegram" required="required"/>
                 <label class="form__label js-label">@Telegram</label>
+                <div class="form_error"></div>
               </div>
               <div class="form__input-wrap">
-                <input class="form__input js-input" type="text" name="comment" required="required"/>
+                <input class="form__input js-input" type="text" name="comment"/>
                 <label class="form__label js-label">What is your possition in the affiliate industry?</label>
+                <div class="form_error"></div>
               </div>
-              <button class="form__btn btn-main">Send a request</button>
+              <button class="form__btn btn-main js-reg-event" id="reg_btn" type="submit">Send a request</button>
             </form>
           </div>
         </div>
@@ -588,6 +597,26 @@ All rights reserved.
         </div>
       </div>
     </footer>
+        <div class="popup js-popup-init active">
+          <div class="popup__wrap">
+            <div class="popup__close js-close"><img src="/img/svg/close.svg" alt="close"/></div>
+            <div class="popup__content">
+              <div class="popup__left">
+                <h4 class="popup__title">Select the language to be displayed on the site</h4>
+              </div>
+              <div class="popup__right">
+                <div class="dropdown popup__dropdown">
+                  <button class="btn dropdown-toggle" id="dropdownMenuButton1" type="button" data-bs-toggle="dropdown" aria-expanded="false">Select language</button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="js-change-lang" href="/ru/" data-lang="/ru/"><img src="/img/svg/russia.svg" alt="russia"/>Russian</a></li>
+                    <li><a class="js-change-lang" href="/index.html" data-lang="/index.html"><img src="/img/svg/english.svg" alt="english"/>English</a></li>
+                    <li><a class="js-change-lang" href="/georgian/" data-lang="/georgian/"><img src="/img/svg/georgia.svg" alt="georgia"/>Georgian</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="popup js-popup" id="order-popup">
           <div class="popup__wrap">
             <div class="popup__close js-close"><img src="/img/svg/close.svg" alt="close"/></div>
@@ -599,16 +628,16 @@ All rights reserved.
                 <div class="dropdown popup__dropdown">
                   <button class="btn dropdown-toggle" id="dropdownMenuButton1" type="button" data-bs-toggle="dropdown" aria-expanded="false">Select language</button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a href="/index.html"><img src="/img/svg/russia.svg" alt="russia"/>Russian</a></li>
-                    <li><a href="/english/"><img src="/img/svg/english.svg" alt="english"/>English</a></li>
-                    <li><a href="/georgian/"><img src="/img/svg/georgia.svg" alt="georgia"/>Georgian</a></li>
+                    <li><a class="js-change-lang" href="/ru/" data-lang="/ru/"><img src="/img/svg/russia.svg" alt="russia"/>Russian</a></li>
+                    <li><a class="js-change-lang" href="/index.html" data-lang="/index.html"><img src="/img/svg/english.svg" alt="english"/>English</a></li>
+                    <li><a class="js-change-lang" href="/georgian/" data-lang="/georgian/"><img src="/img/svg/georgia.svg" alt="georgia"/>Georgian</a></li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-    <div class="overlay js-overlay"></div>
+    <div class="overlay js-overlay active"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"> </script>
     <script src="/js/main.js"></script>
