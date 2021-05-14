@@ -13,14 +13,14 @@ mixin popup(page)
 						button#dropdownMenuButton1.btn.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')!= POPUP.btn
 						ul.dropdown-menu(aria-labelledby='dropdownMenuButton1')
 							li
-								a(href=`/${page}.html`)
+								a.js-change-lang(href=`/ru/`, data-lang="/ru/")
 									img(src="img/svg/russia.svg", alt="russia")
 									| #{POPUP.russia}
 							li
-								a(href=`/english/`)
+								a.js-change-lang(href=`/${page}.html`, data-lang=`/index.html`)
 									img(src="img/svg/english.svg", alt="english")
 									| #{POPUP.english}
 							li
-								a(href=`/georgian/`)
+								a.js-change-lang(href=`/georgian/`, data-lang=`/georgian/`)
 									img(src="img/svg/georgia.svg", alt="georgia")
 									| #{POPUP.georgia}
