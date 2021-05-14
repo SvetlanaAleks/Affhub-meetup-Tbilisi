@@ -7,6 +7,7 @@ import Controls from "./modules/Controls";
 import Menu from "./modules/Menu";
 import Popup from "./modules/Popup";
 import Lang from "./modules/Lang";
+import Submit from "./modules/Submit";
 
 $(function () {
   objectFitImages();
@@ -14,6 +15,7 @@ $(function () {
   Menu.init();
   Popup.init();
   Lang.init();
+  Submit.init();
 
   document.body.onload = function () {
     setTimeout(function () {

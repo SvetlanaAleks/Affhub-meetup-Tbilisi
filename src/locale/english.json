@@ -104,7 +104,8 @@
     "label_2": "Phone number",
     "label_3": "@Telegram",
     "label_4": "What is your possition in the affiliate industry?",
-    "btn": "Send a request"
+    "btn": "Send a request",
+    "success": "Our manager will contact you shortly and tell you the details of the event. To keep abreast of all events and news, subscribe to our telegram channel!"
   },
   "footer": {
     "desc": "All materials on the site https://affhub.net are for informational purposes only. We do our best to ensure that all published information is as accurate and complete as possible. <br><br> The administration of the Affhub.net site does not bear any responsibility for any losses, including financial ones, if the submitted materials are misinterpreted or because of the use of incomplete or incorrect information posted on this site.",

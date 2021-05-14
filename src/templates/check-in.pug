@@ -3,21 +3,28 @@
 section.check-in#check-in
 	.wrapper
 		.check-in__wrapper
-			.check-in__left
+			.check-in__success
+					h2.check-in__subtitle!= CHECK_IN.success
+			.check-in__left.hide
 				h2.check-in__title!= CHECK_IN.title
 				p.check-in__text!= CHECK_IN.desc
-			.check-in__right
-				form.form(action="/", method="post")
+			.check-in__right.hide
+				form.form#registration_form(action="/", method="post")
+					input.js-input-location(type="hidden" name="location")
 					.form__input-wrap
 						input.form__input.js-input(type="text", name="name" required)
 						label.form__label.js-label!= CHECK_IN.label_1
+						.form_error
 					.form__input-wrap
 						input.form__input.js-input(type="tel", name="phone" required)
 						label.form__label.js-label!= CHECK_IN.label_2
+						.form_error
 					.form__input-wrap
 						input.form__input.js-input(type="text", name="telegram" required)
 						label.form__label.js-label!= CHECK_IN.label_3
+						.form_error
 					.form__input-wrap
-						input.form__input.js-input(type="text", name="comment" required)
+						input.form__input.js-input(type="text", name="comment")
 						label.form__label.js-label!= CHECK_IN.label_4
-					button.form__btn.btn-main!= CHECK_IN.btn
+						.form_error
+					button.form__btn.btn-main.js-reg-event#reg_btn(type="submit")!= CHECK_IN.btn
