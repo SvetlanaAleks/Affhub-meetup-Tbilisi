@@ -116,6 +116,9 @@
     "change_lang": "Change the website language"
   },
   "popup": {
-    "title": "Select the language to be displayed on the site"
+    "title": "Select the language to be displayed on the site",
+    "russia": "Russian",
+    "english": "English",
+    "georgia": "Georgian"
   }
 }
