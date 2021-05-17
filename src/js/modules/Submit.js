@@ -8,13 +8,28 @@ var Submit = (function () {
       },
       phone: {
         regExp: /[0-9+()-\s]{5,}/,
-        empty: "Phone number or telegram login required",
+        empty: "Phone number required",
         notValid: "Invalid phone number",
       },
       telegram: {
         regExp: /\@?[\d\w]{5,}/,
-        empty: "Phone number or telegram login required",
+        empty: "Telegram login required",
         notValid: "Incorrect telegram",
+      },
+      skype: {
+        regExp: /^[a-zA-Z][a-zA-Z0-9_.,-]{5,31}$/,
+        empty: "Skype login required",
+        notValid: "Incorrect skype",
+      },
+      viber: {
+        regExp: /[0-9+()-\s]{5,}/,
+        empty: "Viber required",
+        notValid: "Incorrect viber",
+      },
+      whatsapp: {
+        regExp: /[0-9+()-\s]{5,}/,
+        empty: "WhatsApp required",
+        notValid: "Incorrect WhatsApp",
       },
     },
     ru: {
@@ -25,13 +40,28 @@ var Submit = (function () {
       },
       phone: {
         regExp: /[0-9+()-\s]{5,}/,
-        empty: "Номер телефона или телеграм логин обязателен",
+        empty: "Номер телефона обязателен",
         notValid: "Некорректный номер телефона",
       },
       telegram: {
         regExp: /\@?[\d\w]{5,}/,
-        empty: "Номер телефона или телеграм логин обязателен",
+        empty: "Телеграм логин обязателен",
         notValid: "Некорректный telegram",
+      },
+      skype: {
+        regExp: /^[a-zA-Z][a-zA-Z0-9_.,-]{5,31}$/,
+        empty: "Skype логин обязателен",
+        notValid: "Некорректный skype",
+      },
+      viber: {
+        regExp: /[0-9+()-\s]{5,}/,
+        empty: "Viber обязателен",
+        notValid: "Некорректный Viber",
+      },
+      whatsapp: {
+        regExp: /[0-9+()-\s]{5,}/,
+        empty: "WhatsApp обязателен",
+        notValid: "Некорректный WhatsApp",
       },
     },
     georgian: {
@@ -49,6 +79,21 @@ var Submit = (function () {
         regExp: /\@?[\d\w]{5,}/,
         empty: "ტელეფონის ნომერი ან დეპეშის შესვლა აუცილებელია",
         notValid: "არასწორი დეპეშა",
+      },
+      skype: {
+        regExp: /^[a-zA-Z][a-zA-Z0-9_.,-]{5,31}$/,
+        empty: "Skype აუცილებელია",
+        notValid: "არასწორი skype",
+      },
+      viber: {
+        regExp: /[0-9+()-\s]{5,}/,
+        empty: "Viber აუცილებელია",
+        notValid: "არასწორი Viber",
+      },
+      whatsapp: {
+        regExp: /[0-9+()-\s]{5,}/,
+        empty: "WhatsApp აუცილებელია",
+        notValid: "არასწორი WhatsApp",
       },
     },
   };

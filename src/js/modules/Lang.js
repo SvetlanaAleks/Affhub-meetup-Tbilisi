@@ -15,8 +15,7 @@ const Lang = (function () {
         localStorage.getItem("lang") !== null
       ) {
         const currentLocation = localStorage.getItem("lang");
-        console.log(currentLocation);
-        location.href = currentLocation;
+        location.href = "http://localhost:9000" + currentLocation;
       }
     },
     updateLangToLocal: function () {
@@ -24,7 +23,7 @@ const Lang = (function () {
         const _this = $(this);
         const lang = _this.data("lang");
         localStorage.setItem("lang", lang);
-        localStorage.setItem("local", location.origin + lang);
+        localStorage.setItem("local", "http://localhost:9000" + lang);
 
         if (localStorage.getItem("initPopup") === null) {
           popUpBlockInit.removeClass("active");

@@ -1,5 +1,5 @@
 // Main JS module
-// objectFitImages polyfill
+import "select2/dist/js/select2.full";
 import layout from "./global/layout";
 
 import objectFitImages from "object-fit-images";
@@ -17,13 +17,18 @@ $(function () {
   Lang.init();
   Submit.init();
 
-  document.body.onload = function () {
-    setTimeout(function () {
-      var preloader = document.getElementById("preloader");
-
-      if (!preloader.classList.contains("cansel")) {
-        preloader.classList.add("cansel");
-      }
-    }, 200);
-  };
+  layout.layoutHandler({
+    onInit: (layout) => {
+      $(".js-select")
+        .select2({
+          minimumResultsForSearch: Infinity,
+          placeholder: " ",
+        })
+        .on("change", function (e) {
+          const _this = $(this);
+          console.log(_this.val());
+          $("#nickname").attr("name", _this.val());
+        });
+    },
+  });
 });

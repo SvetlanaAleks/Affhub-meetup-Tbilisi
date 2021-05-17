@@ -26,7 +26,7 @@
     "title": "First in Georgia!",
     "desc": "The top affiliate event",
     "month": "June",
-    "time": "At 3pm on Friday",
+    "time": "At 12am on Friday",
     "place": "Tbilisi, Republic Multifunctional Event&nbsp;Space",
     "map": "On the map"
   },
@@ -65,13 +65,13 @@
   "schedule": {
     "title_main": "Dive into world of traffic together with Affhub Meetup",
     "subtitle": "Timing",
-    "item_1": "Check-in for Affhub Meetup Tbilisi and  welcome drink",
-    "item_2": "Organizers and sponsors’ introductory remarks ",
-    "item_3": "Report 1",
-    "item_4": "Report 2",
-    "item_5": "Report 3",
-    "item_6": "Report 4",
-    "item_7": "Afterparty"
+    "item_1": "Registration. Welcome drink ",
+    "item_2": "Report from Alexander Boiko",
+    "item_3": "Report from Alexander Klim",
+    "item_4": "Coffee Break",
+    "item_5": "Report from Denis Kharlamov ",
+    "item_6": "Secret Speaker",
+    "item_7": "Networking Party"
   },
   "team": {
     "title": "Be in touch with our team for cooperation",
@@ -94,7 +94,7 @@
     "city_8": "Rostov-on-Don"
   },
   "sponsors": {
-    "title_1": "GTNTRAL SPONSOR",
+    "title_1": "GENERAL SPONSOR",
     "title_2": "Partners"
   },
   "check_in": {
@@ -105,7 +105,8 @@
     "label_3": "@Telegram",
     "label_4": "What is your possition in the affiliate industry?",
     "btn": "Send a request",
-    "success": "Our manager will contact you shortly and tell you the details of the event. To keep abreast of all events and news, subscribe to our telegram channel!"
+    "success": "Our manager will contact you shortly and tell you the details of the event. To keep abreast of all events and news, subscribe to our telegram channel!",
+    "nickname": "Nickname"
   },
   "footer": {
     "desc": "All materials on the site https://affhub.net are for informational purposes only. We do our best to ensure that all published information is as accurate and complete as possible. <br><br> The administration of the Affhub.net site does not bear any responsibility for any losses, including financial ones, if the submitted materials are misinterpreted or because of the use of incomplete or incorrect information posted on this site.",
